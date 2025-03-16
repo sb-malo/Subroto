@@ -1,0 +1,640 @@
+        /***** Common Code *****/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    font-family: "Roboto", sans-serif;
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+body{                                   
+    background: #07001a;
+}
+img{
+    max-width: 100%;
+}
+                        /***** Common Code end *****/
+
+                   /***** Header CSS Strat *****/
+
+.bg{                                       
+    max-width: 100%;
+    height: 50px;
+    border-bottom:1px solid crimson ;
+    box-shadow: 0px 0px 8px 0px rgb(245, 161, 178);
+}
+
+.logo a{
+    max-width: 80px;
+    height: auto;
+    align-self: center;
+    padding: 5px 15px;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(20, 220, 203);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: 0.2s;
+
+}
+
+                        /***** Hover effect *****/
+
+.logo a:hover{                             
+
+    color: rgb(150, 220, 20);
+    transition: 0.2s;
+
+}
+
+                 /***** Button for mobile responsive *****/
+
+#mob{   
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+}
+
+
+.navebar{
+    width: 100%;
+    max-width: 90%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 5%;
+    padding-top: 5px;
+}
+                         /***** Navebar Start *****/
+
+.text ul{                                       
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-self: right;
+    align-items: center;
+}
+.text ul li{
+    flex-grow: 1;
+    padding: 0px 15px;
+    list-style: none;
+}
+.text ul li a{                                      
+    text-decoration: none;
+    color: rgb(150, 220, 20);
+    font-size: 20px;
+    font-weight: bold;
+    transition: 0.2s;
+
+}
+                             /***** Hover effect *****/
+.text ul li a:hover{                            
+    color: rgb(20, 220, 203);
+    transition: 0.2s;
+}
+
+                        /***** Navebar or Menu end *****/
+      
+.section{
+    margin-top: -10px;
+}                       
+.article{
+    box-shadow: #00ff73 0px 0px 10px 0px;
+    border-radius: 10px;
+    max-width: 55%;
+}
+
+#name{
+    color: rgb(0, 238, 255);
+    margin-bottom: 25px;
+    font-size: 25px;
+    margin-top: -10px;
+    padding: 0px 10px;
+}
+#hlo{
+    color: crimson;
+    margin-bottom:30px;
+    font-weight: bold;
+    font-size: 30px;
+    padding: 0px 10px;
+    margin-top: 10px;
+}#hlo span{
+    color: #2dba4e;
+    font-size: 25px;
+    padding: 0px 10px;
+}
+.name{
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+#sp{
+    font-weight: bold;
+    color: #e67e22;
+    font-size: 30px;
+    letter-spacing: 5px;
+    cursor: pointer;
+    padding: 0px 10px;
+
+}
+.h4{
+    font-weight: bold;
+    font-size: 30px;
+    letter-spacing: 5px;
+    text-shadow: 0px 0px 1px rgba(114, 114, 114, 0.867);
+    position: relative;
+    cursor: pointer;
+    display: inline;
+}
+.h4::before{
+    content: attr(data-text);
+    width: 0%;
+    height: 100%;
+    color: rgb(220, 20, 160);
+    position: absolute;
+    left: 28.5%;
+    top: 0;
+    overflow: hidden;
+    /*animation: type 4s infinite;*/
+    text-shadow: 0px 0px 1px rgb(220, 20, 160);
+    border-right: rgb(220, 20, 160) 3px solid;
+    transition: 1.5s;
+    cursor: pointer;
+}
+.h4:hover:before{
+    width: 70.3%;
+    transition: 1.5s;
+    text-shadow: 0px 0px 1px rgb(220, 20, 160);
+}
+
+#allbg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    position: fixed;
+    left: 6rem;
+    top: 8rem;
+}
+
+
+.create{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+    height: 65vh;
+    background:#c6e0ff10;
+    border-radius: 10px;
+    backdrop-filter: blur(8px);
+    box-shadow: #df4d6a 0px 0px 8px 0px;
+}
+.create form input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px 30px;
+    width: 300px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 20px;
+    margin: 3px 0px;
+    border-bottom:2px white solid ;
+}
+
+.create form input::placeholder{
+    color: #fff;
+}
+
+form{
+    border: #b40078 1px solid;
+    padding: 10px 10px;
+    box-shadow:  #b40078 0px 0px 10px 0px;
+    border-radius: 10px;
+    background:transparent;
+    backdrop-filter: blur(10px);
+}
+.form-button{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+#submit input{
+    display: inline;
+    width: 100px;
+    flex: 1;
+    border: none;
+    padding: 10px 5px;
+}
+#reset input{
+    display: inline;
+    width: 100px;
+    flex: 1;
+    border: none;
+    padding: 10px 5px;
+}
+#submit{
+    background: #5b00a5;
+    margin-top: 15px;
+    box-shadow: 0px 0px 8px 0px #00ccff;
+    border-radius: 3px;
+    transition: 0.2s;
+}
+#submit:hover{
+    background: none;
+    box-shadow: 0px 0px 8px 0px #ffffff;
+    border-radius: 3px;
+    transition: 0.2s;
+}
+#reset{
+    margin-top: 15px;
+    box-shadow: 0px 0px 10px 0px #ffffff;
+    border-radius: 3px;
+    transition: 0.2s;
+}
+#reset:hover{
+    background: #5b00a5;
+    margin-top: 15px;
+    box-shadow: 0px 0px 10px 0px #00ccff;
+    border-radius: 3px;
+    transition: 0.2s;
+}
+
+
+/***** Login or create acount section end *****/
+
+#aboutMe{
+    color: rgb(180, 160, 174);
+    font-size: 20px;
+    max-width: 70%;
+    margin-bottom:25px ;
+    margin-top:25px ;
+    margin-left: 10px;
+}
+
+#showMore{
+    background: rgb(20, 220, 87);
+    padding: 10px 20px;
+    border: rgb(20, 220, 87) 2px solid;
+    color: #fff;
+    font-size: 20px;
+    box-shadow: rgb(20, 220, 87) 0px 0px 4px 0px;
+    transition: 0.2s;
+    margin-bottom: 30px;
+    margin-left: 10px;
+}
+
+#details{
+    max-width: 50%;
+    color: #5a7280;
+    position: absolute;
+    left: 0;
+    top: 50%;
+}
+
+
+#showMore:hover{
+    background: rgb(140, 20, 220);
+    padding: 10px 20px;
+    border: rgb(140, 20, 220) 2px solid;
+    box-shadow: inset 0px 0px 4px 0px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+#showMore2{
+    background: rgb(140, 20, 220);
+    padding: 10px 20px;
+    border: rgb(140, 20, 220) 2px solid;
+    color: #fff;
+    font-size: 20px;
+    box-shadow: rgb(140, 20, 220) 0px 0px 4px 0px;
+    margin-bottom: 30px;
+    transition: 0.2s;
+    margin-left: 10px;
+}
+
+#showMore2:hover{
+    background: rgb(20, 220, 87);
+    padding: 10px 20px;
+    border: rgb(20, 220, 87) 2px solid;
+    box-shadow: inset 0px 0px 4px 0px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.image{
+    background: rgb(0, 238, 255);
+    border-radius: 50%;
+    position: relative;
+    width: 260px;
+    height: 260px;
+    overflow: hidden;
+    border: crimson 5px solid;
+}
+:before{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 380px;
+    height: 420px;
+    background: linear-gradient(0deg, transparent, transparent, #45f3ff, #45f3ff, #45f3ff);
+    z-index: 1;
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+}
+.image{
+    background: rgb(0, 238, 255);
+    border-radius: 50%;
+    position: relative;
+    width: 260px;
+    height: 260px;
+    overflow: hidden;
+    border: crimson 5px solid;
+}
+.image a{
+}
+.image a img{
+    height: 300px;
+    width: auto;
+    position: absolute;
+    left: 15%;
+    top: 0%;
+}
+.icon{
+    margin-left: 20px;
+}
+.login{
+    margin-top: 20px;
+}
+
+.mid{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 50px;
+    
+    
+}
+
+#linkedin a{
+    font-size: 20px;
+    color: #5a7280;
+    padding: 0px 15px;
+}
+
+#facebook a{
+    font-size: 20px;
+    color: #5a7280;
+    padding: 0px 15px;
+}
+#github a{
+    font-size: 20px;
+    color: #525151;
+    padding: 0px 15px;
+}
+
+#instagram a{
+    font-size: 20px;
+    color: #5a7280;
+    padding: 0px 15px;
+}
+
+#linkedin a:hover{            /***** Hover Effect *****/
+    color: #0077B5 ;
+}
+#facebook a:hover{            /***** Hover Effect *****/
+    color: #1877F2;
+}
+#github a:hover{            /***** Hover Effect *****/
+    color: #5a7280;
+}
+#instagram a:hover{            /***** Hover Effect *****/
+    background: linear-gradient(to right, #feda75, orange, pink, purple, blue); 
+    -webkit-text-fill-color: transparent; 
+    -webkit-background-clip: text; 
+}
+
+.showMore{
+    background: rgb(20, 220, 87);
+    padding: 10px 20px;
+    border: rgb(20, 220, 87) 2px solid;
+    color: #fff;
+    font-size: 20px;
+    box-shadow: rgb(20, 220, 87) 0px 0px 4px 0px;
+    transition: 0.2s;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.showMore:hover{
+    background: rgb(140, 20, 220);
+    padding: 10px 20px;
+    border: rgb(140, 20, 220) 2px solid;
+    box-shadow: inset 0px 0px 4px 0px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.showMore2{
+    background: rgb(140, 20, 220);
+    padding: 10px 20px;
+    border: rgb(140, 20, 220) 2px solid;
+    color: #fff;
+    font-size: 20px;
+    box-shadow: rgb(140, 20, 220) 0px 0px 4px 0px;
+    margin-bottom: 30px;
+    transition: 0.2s;
+    margin-top: 30px;
+}
+
+.showMore2:hover{
+    background: rgb(20, 220, 87);
+    padding: 10px 20px;
+    border: rgb(20, 220, 87) 2px solid;
+    box-shadow: inset 0px 0px 4px 0px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+footer{
+    border-top: 2px solid #00ff73;
+    box-shadow: 0px 0px 6px 0px #00ff73;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#cp{
+    color: #00ff73;
+    font-size: 25px;
+    text-align: center;
+    flex: 1;
+}
+#stl{
+    color: #bbbbbb;
+    width: 350px;
+    display: block;
+    font-size: 20px;
+    font-weight: 2;
+    text-align: left;
+    padding: 10px 20px;
+    background: rgba(90, 114, 128, 0.37);
+    backdrop-filter: blur(5px);
+    border-radius: 5px;
+    margin-left: -5px;
+    visibility: hidden;
+    box-shadow: rgb(20, 213, 220) 0px 0px 10px 0px;
+    margin-left: 10px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+#email{
+    color: white;
+}
+#log{
+    color: #fff;
+    margin-right: 5px;
+    transition: 0.2s;
+}
+.all-icone img{
+    max-width: 40px;
+    height: auto;
+    z-index: -1;
+}
+            /***** Background Icon style *****/
+#one{
+    filter: blur(1px);
+    position: absolute;
+    left: 10rem;
+    top: 70.5%;
+    animation: cakro 4s infinite;
+}
+#two{
+    filter: blur(1px);
+    position: absolute;
+    left: 15rem;
+    top: 85.5%;
+    animation: roted 1s infinite
+}
+#three{
+    filter: blur(1px);
+    position: absolute;
+    left: 20rem;
+    top: 71.5%;
+    animation: opa2 1s infinite
+    
+}
+
+#four{
+    filter: blur(1px);
+    position: absolute;
+    
+    left: 25rem;
+    top: 84.3%;
+    animation: opa 1s infinite;
+}
+
+#five{
+    filter: blur(1px);
+    position: absolute;
+    left: 30rem;
+    top: 70.5%;
+    animation: moving 2s linear infinite;
+    animation-delay: -4.5s;
+}
+
+@keyframes cakro {
+    0%{
+        transform: translateX(0);
+        transform: translateY(0);
+    }
+
+    50%{
+        transform: translate(20px, 10px) rotate(-40deg);
+    }
+
+    100%{
+        transform: translateX(0);
+        transform: translateY(0);
+    }
+
+}
+
+@keyframes opa {
+    0%{
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    50%{
+        transform: scale(1.2);
+        opacity: 0;
+    }
+
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+
+}
+
+@keyframes opa2 {
+    0%{
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    100%{
+        transform: scale(1.2);
+        opacity: 0;
+    }
+
+}@keyframes roted {
+    0%{
+        transform: rotate(-250eg);
+    }
+
+    50%{
+        transform: rotate(25deg);
+    }
+
+    100%{
+        transform: rotate(0deg);
+    }
+
+}
+
+@keyframes moving {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+    
+}
